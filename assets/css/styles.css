@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,400;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Be Vietnam", sans-serif;
+  background-color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
