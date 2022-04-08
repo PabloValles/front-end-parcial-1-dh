@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parcial DH</title>
+    <script
+      src="https://kit.fontawesome.com/79d4a4a910.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
@@ -16,16 +20,29 @@
           </div>
           <div class="navbar__links">
             <ul>
-              <li class="items">Pricing</li>
-              <li class="items">Product</li>
-              <li class="items">About us</li>
-              <li class="items">Carrers</li>
-              <li class="items">Comunity</li>
+              <li class="items"><a href="#">Pricing</a></li>
+              <li class="items"><a href="#">Product</a></li>
+              <li class="items"><a href="#">About us</a></li>
+              <li class="items"><a href="#">Carrers</a></li>
+              <li class="items"><a href="#">Comunity</a></li>
             </ul>
           </div>
           <div class="navbar__btn">
             <button>Get Started</button>
           </div>
+          <div class="navbar__menu-btn">
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </div>
+        </nav>
+        <nav class="navbar-mobile">
+          <ul>
+            <li class="items"><a href="#">Pricing</a></li>
+            <li class="items"><a href="#">Product</a></li>
+            <li class="items"><a href="#">About us</a></li>
+            <li class="items"><a href="#">Carrers</a></li>
+            <li class="items"><a href="#">Comunity</a></li>
+          </ul>
+          <i class="fa fa-close" aria-hidden="true"></i>
         </nav>
       </div>
     </header>
@@ -43,7 +60,7 @@
               animi ducimus doloremque ad iste odio minus facere provident,
               natus maiores sed totam vitae vero!
             </p>
-            <button>Get Started</button>
+            <button class="btn-orange">Get started</button>
           </div>
         </div>
       </section>
@@ -54,40 +71,38 @@
             <h2>What's different about Manage?</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque voluptas est non aut reiciendis aliquid enim dicta
-              aliquam ipsa quo vel expedita, consequatur tempore excepturi
-              vitae! Rerum, inventore doloremque? Culpa.
+              Doloremqueerum, inventore doloremque? Culpa.
             </p>
           </div>
           <div class="manage__list">
-            <ol class="manage-list">
+            <ol>
               <li class="manage-list__item">
-                <h3>Track company...</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Saepe natus unde rem odit recusandae iure ab reprehenderit,
-                  doloribus vitae esse facilis impedit deserunt optio enim? Cum
-                  aperiam id molestias ab.
-                </p>
+                <p>Track company...</p>
               </li>
+              <p class="muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                natus unde rem odit recusandae iure ab reprehenderit, doloribus
+                vitae esse facilis impedit deserunt optio enim? Cum aperiam id
+                molestias ab.
+              </p>
               <li class="manage-list__item">
-                <h3>Track company...</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Saepe natus unde rem odit recusandae iure ab reprehenderit,
-                  doloribus vitae esse facilis impedit deserunt optio enim? Cum
-                  aperiam id molestias ab.
-                </p>
+                <p>Track company...</p>
               </li>
+              <p class="muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                natus unde rem odit recusandae iure ab reprehenderit, doloribus
+                vitae esse facilis impedit deserunt optio enim? Cum aperiam id
+                molestias ab.
+              </p>
               <li class="manage-list__item">
-                <h3>Track company...</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Saepe natus unde rem odit recusandae iure ab reprehenderit,
-                  doloribus vitae esse facilis impedit deserunt optio enim? Cum
-                  aperiam id molestias ab.
-                </p>
+                <p>Track company...</p>
               </li>
+              <p class="muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                natus unde rem odit recusandae iure ab reprehenderit, doloribus
+                vitae esse facilis impedit deserunt optio enim? Cum aperiam id
+                molestias ab.
+              </p>
             </ol>
           </div>
         </div>
@@ -100,7 +115,11 @@
           </div>
           <div class="testimonials__carousel">
             <div class="testimonials__carousel-item">
-              <img src="" alt="Avatar" class="card-avatar" />
+              <img
+                src="assets/images/avatar-ali.png"
+                alt="Avatar"
+                class="card-avatar"
+              />
               <p class="card-name">Ali Bravo</p>
               <p class="card-desc">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -108,7 +127,11 @@
               </p>
             </div>
             <div class="testimonials__carousel-item">
-              <img src="" alt="Avatar" class="card-avatar" />
+              <img
+                src="assets/images/avatar-richard.png"
+                alt="Avatar"
+                class="card-avatar"
+              />
               <p class="card-name">Ali Bravo</p>
               <p class="card-desc">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -116,7 +139,11 @@
               </p>
             </div>
             <div class="testimonials__carousel-item">
-              <img src="" alt="Avatar" class="card-avatar" />
+              <img
+                src="assets/images/avatar-shanai.png"
+                alt="Avatar"
+                class="card-avatar"
+              />
               <p class="card-name">Ali Bravo</p>
               <p class="card-desc">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -124,26 +151,32 @@
               </p>
             </div>
           </div>
+
+          <button class="btn-orange">Get started</button>
         </div>
       </section>
 
       <section class="call">
         <div class="container">
           <h2>Simplify hoy your team words today.</h2>
-          <button>Get started</button>
+          <button class="btn-white">Get started</button>
         </div>
       </section>
     </main>
     <footer>
       <div class="container">
         <div class="footer-logo">
-          <img class="footer-logo__logo" src="assets/images/Logo.png" alt="" />
+          <img
+            class="footer-logo__logo"
+            src="assets/images/LogoWhite.png"
+            alt=""
+          />
           <ul class="footer-logo__social">
-            <li><i>Facebook</i></li>
-            <li><i></i></li>
-            <li><i></i></li>
-            <li><i></i></li>
-            <li><i></i></li>
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
           </ul>
         </div>
         <div class="footer-links1">
@@ -163,8 +196,13 @@
         </div>
         <div class="footer-form">
           <form action="#">
-            <input type="email" name="email" id="email" />
-            <button>Go</button>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Update your email"
+            />
+            <button class="btn-orange">Go</button>
           </form>
         </div>
       </div>

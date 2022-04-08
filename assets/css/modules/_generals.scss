@@ -1,0 +1,63 @@
+/*<!-- Estilos generales --->*/
+$color-orange: #F3603C;
+$color-blue: #242D52;
+$color-gray: #b3b3b3;
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	font-family: "Be Vietnam", sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 .8rem;
+}
+
+button {
+    padding: .8rem 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+button.btn-orange{
+    background-color: $color-orange;
+    color: #fff;
+    transition: all .3s;
+    
+    &:hover{
+        cursor: pointer;
+        background-color: rgba($color: $color-orange, $alpha: .7);
+        box-shadow: rgba($color: $color-orange, $alpha: 0.8) 0px 6px 25px -8px;
+    }
+}
+button.btn-white{
+    background-color: #fff;
+    color: $color-orange;
+    transition: all .3s;
+    font-weight: 600;
+    
+    &:hover{
+        cursor: pointer;
+        box-shadow: rgba($color: #fff, $alpha: 0.8) 0px 6px 15px -8px;
+        color: rgba($color: $color-orange, $alpha: 0.6);
+    }
+}
+
+a{
+    color: $color-blue;
+
+    &:hover{
+        color: $color-gray;
+    }
+}
