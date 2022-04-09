@@ -1,7 +1,17 @@
 /*<!-- Estilos generales --->*/
-$color-orange: #F3603C;
-$color-blue: #242D52;
+
+/* ### Primario ### */
+$color-orange: rgb(242, 95, 58);
+$color-blue: rgb(35, 44, 81);
+
+/* ### Neutro ### */
+$colora-zul-grisaceo-oscuro: rgb(143, 148, 167);
+$color-azul-muy-oscuro: rgb(29, 30, 37);
+$color-rojo-muy-palido: rgb(255, 239, 234);
+$color-variante-gris-claro: rgb(249, 249, 249);
+
 $color-gray: #b3b3b3;
+
 
 
 * {
@@ -15,12 +25,13 @@ $color-gray: #b3b3b3;
 body {
 	font-family: "Be Vietnam", sans-serif;
     background-color: #fff;
+    font-size: 16px;
+    margin: 0 auto;
 }
 
 .container {
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 .8rem;
+    padding: 0 .5rem;
 }
 
 button {
