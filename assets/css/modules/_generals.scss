@@ -5,7 +5,7 @@ $color-orange: rgb(242, 95, 58);
 $color-blue: rgb(35, 44, 81);
 
 /* ### Neutro ### */
-$colora-zul-grisaceo-oscuro: rgb(143, 148, 167);
+$color-azul-grisaceo-oscuro: rgb(143, 148, 167);
 $color-azul-muy-oscuro: rgb(29, 30, 37);
 $color-rojo-muy-palido: rgb(255, 239, 234);
 $color-variante-gris-claro: rgb(249, 249, 249);
@@ -30,8 +30,9 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     padding: 0 .5rem;
+    margin: 0 auto;
 }
 
 button {

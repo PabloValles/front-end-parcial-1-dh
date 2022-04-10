@@ -22,39 +22,6 @@ header{
 		}
 
 	}
-	.navbar-mobile{
-		position: absolute;
-		top: 0;
-		left: 0;
-		background-color: $color-blue;
-		height: 100vh;
-		width: 80%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		display: none;
-
-		i{
-			color:#fff;
-			position: absolute;
-			top: 10px;
-			right: 20px;
-			z-index: 100;
-			font-size: 2rem;
-		}
-
-		li{
-			margin: 2.5rem 0;
-			a{
-				font-size: 1.3rem;
-				color: #fff;
-
-				&:hover{
-					color: $color-orange;
-				}
-			}
-		}
-	}
 
 	section.hero{
 		padding: 1rem 0;
@@ -62,6 +29,7 @@ header{
 		.container{
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			align-items: center;
 		}
 		.hero__illustration{
@@ -76,10 +44,17 @@ header{
 			h1{
 				color: $color-blue;
 				font-size: 2.5rem;
+				font-weight: 700;
+				line-height: 50px;
+				letter-spacing: -0.035em;
 			}
 			p{
 				margin: 1.5rem 0;
 				padding: 0 1rem;
+				font-weight: 500;
+				font-size: 16.5584px;
+				line-height: 157.1%;
+				color: $color-azul-grisaceo-oscuro;
 			}
 		}
 	}
@@ -90,5 +65,69 @@ header{
 		top: -70px;
 		right: -100px;
 		width: 110%;
+	}
+}
+
+@media (min-width: 1430px){
+	header{
+		.navbar{
+			&__logo{
+				margin-top: 4px;
+			}
+
+			&__links, &__btn{
+				display: block;
+			}
+
+			&__links ul{
+				display: flex;
+				gap: 2rem;
+			}
+
+			.navbar__menu-btn{
+				display: none;
+			}
+		}
+
+		section.hero{
+			.container{
+				flex-direction: row;
+				justify-content: space-between;
+
+				.hero__illustration{
+					order: 1;
+					img{
+						width: 100%;
+						margin: 0;
+					}
+				}
+
+				.hero__content{
+					text-align: left;
+					width: 35%;
+		
+					h1{
+						color: $color-blue;
+						font-size: 3rem;
+						font-weight: 700;
+						line-height: 66px;
+						letter-spacing: -0.035em;
+
+					}
+					p{
+						margin: 1.5rem 0;
+						padding: 0;
+						font-weight: 500;
+						font-size: 16.5584px;
+						line-height: 157.1%;
+						color: $color-azul-grisaceo-oscuro;
+					}
+				}
+			}
+		}
+
+		.shape{
+			display: none;
+		}
 	}
 }
