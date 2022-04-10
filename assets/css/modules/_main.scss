@@ -143,44 +143,40 @@ main{
 	main{
 		section.manage{
 			margin-top: 1.5rem;
-			padding: 1rem 0;
+			padding: 3rem 0;
 			
 			.container{
 				display: flex;
 				justify-content: space-between;
-				gap: 3rem;
 			}
 	
 			.manage__title{
 				text-align: left;
+				flex: 0 0 40%;
+				padding-right: 6rem;
 	
 				h2{
-					color: $color-blue;
 					font-size: 2.2rem;
-					font-weight: 700;
 					line-height: 41px;
 					letter-spacing: 0em;
 					padding: 0;
 				}
 				p{
 					margin: 1.5rem 0;
-					color: $color-azul-grisaceo-oscuro;
-					font-weight: 500;
-					font-size: 1rem;
-					line-height: 171.1%;
+					padding-right: 2.5rem;
 				}
 			}
 			.manage__list{
+				flex: 0 0 50%;
 				.manage__list-item{
 					padding: 1rem;
-					display: flex;
-					align-items: center;
-					gap: .5rem;
-					flex-wrap: wrap;
+					gap: 1.5rem;
+
 	
 					button{
-						width: 20%;
-						padding: .7rem 1rem;
+						width: 12%;
+						padding: .8rem 1rem;
+						font-weight: 700;
 					}
 	
 					p.item-title{
@@ -197,10 +193,30 @@ main{
 						line-height: 26px;
 						letter-spacing: -0.01em;
 						color: $color-azul-grisaceo-oscuro;
-						margin-left: 4.5rem;
+						margin-left: 5.2rem;
+						padding-right: 2.5rem;
 					}
 				}
 				
+			}
+		}
+		section.testimonials{
+			padding: 3rem 0 6rem 0;
+			.testimonials__carousel{
+				flex-direction: row;
+			}
+		}
+		section.call{
+			.container{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				h2{
+					margin: 0;
+					flex: 0 0 40%;
+					text-align: left;
+				}
 			}
 		}
 	}

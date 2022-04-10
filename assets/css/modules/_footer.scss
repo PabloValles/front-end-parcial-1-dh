@@ -66,3 +66,59 @@ footer{
 	}
 
 }
+
+@media (min-width: 1430px){
+	footer{
+
+		.container{
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			.footer-links{
+				flex: 0 0 35%;
+
+				display: flex;
+				justify-content: space-between;
+
+				ul li{
+					margin: 0 0 1rem 0;
+				}
+
+			}
+			.footer-copy{
+				flex: 0 0 100%;
+				order: 2;
+				text-align: right;
+			}
+
+			.footer-logo{
+				order: -1;
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				flex: 0 0 25%;
+
+				img{
+					width: 150px;
+				}
+				&__social{
+					order:1;
+					justify-content: flex-start;
+					gap: 1rem;
+
+					li{
+						font-size: 1.5rem;
+					}
+				}
+				
+			}
+			.footer-form{
+				order: 1;
+				flex: 0 0 30%;
+				text-align: right;
+			}
+		}
+	}
+}
