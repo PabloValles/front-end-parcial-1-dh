@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /*<!-- Estilos generales --->*/
-/* ### Primario ### */
-/* ### Neutro ### */
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
@@ -35,29 +33,25 @@ button {
 button.btn-orange {
   background-color: #f25f3a;
   color: #fff;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 button.btn-orange:hover {
   cursor: pointer;
   background-color: rgba(242, 95, 58, 0.7);
-  -webkit-box-shadow: rgba(242, 95, 58, 0.8) 0px 6px 25px -8px;
-          box-shadow: rgba(242, 95, 58, 0.8) 0px 6px 25px -8px;
+  box-shadow: rgba(242, 95, 58, 0.8) 0px 6px 25px -8px;
 }
 
 button.btn-white {
   background-color: #fff;
   color: #f25f3a;
-  -webkit-transition: all .3s;
   transition: all .3s;
   font-weight: 600;
 }
 
 button.btn-white:hover {
   cursor: pointer;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.8) 0px 6px 15px -8px;
-          box-shadow: rgba(255, 255, 255, 0.8) 0px 6px 15px -8px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0px 6px 15px -8px;
   color: rgba(242, 95, 58, 0.6);
 }
 
@@ -80,12 +74,8 @@ header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .navbar__logo {
@@ -107,17 +97,10 @@ header section.hero {
 header section.hero .container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header section.hero .hero__illustration img {
@@ -174,18 +157,11 @@ header .shape {
     padding: 2rem 0 0 0;
   }
   header section.hero .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   header section.hero .container .hero__illustration {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   header section.hero .container .hero__illustration img {
     width: 100%;
@@ -245,12 +221,9 @@ main section.manage .manage__list .manage__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: .5rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 main section.manage .manage__list .manage__list-item button {
@@ -299,13 +272,8 @@ main section.testimonials .testimonials__carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 main section.testimonials .testimonials__carousel .testimonials__carousel-item {
@@ -320,8 +288,7 @@ main section.testimonials .testimonials__carousel .testimonials__carousel-item i
   position: absolute;
   top: -30px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 main section.testimonials .testimonials__carousel .testimonials__carousel-item .card-name {
@@ -364,8 +331,7 @@ main section.call img.shape-call {
   position: absolute;
   left: -5px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 0;
 }
 
@@ -435,7 +401,7 @@ main section.call img.shape-call {
   }
   main section.testimonials .testimonials__carousel {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+    
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -446,8 +412,8 @@ main section.call img.shape-call {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+    
+        
             align-items: center;
   }
   main section.call .container h2 {
@@ -468,10 +434,7 @@ footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -498,8 +461,7 @@ footer .container .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 footer .container .footer-links ul li {
@@ -518,9 +480,7 @@ footer .container .footer-logo__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   margin-bottom: 2rem;
 }
 
@@ -544,81 +504,49 @@ footer .container .footer-copy p {
 
 @media (min-width: 1430px) {
   footer .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   footer .container .footer-links {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 35%;
-            flex: 0 0 35%;
+    flex: 0 0 35%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   footer .container .footer-links ul li {
     margin: 0 0 1rem 0;
   }
   footer .container .footer-copy {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    flex: 0 0 100%;
+    order: 2;
     text-align: right;
   }
   footer .container .footer-logo {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 25%;
   }
   footer .container .footer-logo img {
     width: 150px;
   }
   footer .container .footer-logo__social {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    order: 1;
+    justify-content: flex-start;
     gap: 1rem;
   }
   footer .container .footer-logo__social li {
     font-size: 1.5rem;
   }
   footer .container .footer-form {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
+    order: 1;
+    flex: 0 0 30%;
     text-align: right;
   }
 }
-/*# sourceMappingURL=styles.css.map */
